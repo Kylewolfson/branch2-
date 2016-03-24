@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/triangle-scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/triangle-styles.css" rel="stylesheet" type="text/css">
+    <title>Triangle Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Triangle Tracker</h1>
+      <h2>Please enter the lengths of the three sides of your triangle.</h2>
+      <div class="triangle">
+        <form>
+          <div id="sideOneError" class="form-group">
+            <label for="side1">1st Side:</label>
+            <input id="side1" class="form-control" type="text">
+          </div>
+          <div id="sideTwoError" class="form-group">
+            <label for="side2">2nd Side:</label>
+            <input id="side2" class="form-control" type="text">
+          </div>
+          <div id="sideThreeError" class="form-group">
+            <label for="side3">3rd Side:</label>
+            <input id="side3" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <h2 id="equilateral" class="hide1">The sides form an equilateral triangle.</h2>
+        <h2 id="isosceles" class="hide1">The sides form an isosceles triangle.</h2>
+        <h2 id="scalene" class="hide1">The sides form a scalene triangle.</h2>
+        <h2 id="notTriangle" class="hide1">The sides cannot make a triangle.</h2>
+      </div>
+    </div>
+  </body>
+</html>
