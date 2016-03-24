@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/my-styles.css" rel="stylesheet" type="text/css">
+    <title>Politics score!</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2> Please select the answers that most closely resemble your political beliefs and we will generate a score for how liberal or conservative you are!</h2>
+        <form id="politics">
+          <div id="guns-error">
+            <select class="form-control" id="guns">
+            <option disabled selected> -- select an option -- </option>
+            <option value="1">Guns kill people!</option>
+            <option value="2">Guns are scary!</option>
+            <option value="3">I like guns!</option>
+            <option value="4">I LOVE GUNS!!!!!!</option>
+          </select>
+          </div>
+          <div id="politician-error">
+            <select class="form-control" id="politician">
+              <option disabled selected value="0"> -- select an option -- </option>
+              <option value="1">Sanders</option>
+              <option value="2">Clinton</option>
+              <option value="3">Cruz</option>
+              <option value="4">Trump</option>
+            </select>
+          </div>
+          <div id="taxes-error">
+            <select class="form-control" id="taxes">
+              <option disabled selected value="0"> -- select an option -- </option>
+              <option value="1">I don't need money, the state will provide!</option>
+              <option value="2">Taxation is fair in return for our services</option>
+              <option value="3">Darn government is stealing my money!</option>
+              <option value="4">Over my dead body!</option>
+            </select>
+          </div>
+          <div id="benefits-error">
+            <select class="form-control" id="benefits">
+              <option disabled selected value="0"> -- select an option -- </option>
+              <option value="1">Greetings, comrade!</option>
+              <option value="2">The state should provide essential infrastructure and services</option>
+              <option value="3">We need a strong military</option>
+              <option value="4">I am entirely self-sufficient</option>
+            </select>
+          </div>
+        <button type="submit" class="btn">Be judged!</button>
+        </form>
+
+        <div id="result" class="hide1">
+          <h1>You are <span class="intensity"></span> <span class="axis"></span></h1>
+        </div>
+
+
+    </div>
+
+  </body>
+</html>
